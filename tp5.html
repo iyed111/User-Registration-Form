@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tp5Style.css">
+</head>
+<body>
+    <main >
+        <h1>Inscription</h1>
+        
+        <form action="">
+            <div class="imput">
+                <label for="user"   class="labelform">User Name</label>
+                <input type="user"  class="formcontrol"     placeholder="user" required      id="user"   >
+
+            </div>
+            <div class="imput">
+                <label for="email"   class="labelform">Email Adress</label>
+                <input type="email"  class="formcontrol"    value="  @gmail.com"   required     id="email"   >
+
+            </div>
+            <div class="imput">
+                <label for="password"   class="labelform">  Password</label>
+                <input type="password"  class="formcontrol"      placeholder="minimum 4 characters"      required  id="password" >
+
+            </div>
+            
+            <div>
+                <label for="date">date</label>
+                <input id="date" type="datetime-local" name="date"   required>
+            </div>
+            <label for="pays">Pays</label>
+            <select name="pays" id="pays" >
+                <option selected value="nothing"> ..</option>  
+                    <optgroup label="G1">                                      <!--optgroup = t9assam l 2e5tiyarat-->
+                        <option value="Tunisia">Tunisia</option>                    <!--label = titre llgroup heka-->
+                        <option value="Algeria">algeria</option>
+                        <option value="lybia">libya</option>
+                    </optgroup>
+                    <optgroup label="G2">
+                        <option value="U S A">USA</option>
+                        <option value="U K">UK</option>
+                    </optgroup>
+                    <optgroup label="G3">
+                        <option value="Russia">Russia</option>
+                        <option value="Japan">Japan</option>
+                    </optgroup>
+            </select>
+            
+            
+            <button type="submit"   id="btn"     class="btn btn-primary">Create Account</button>
+        </form>
+
+        <script src="form.js"  async></script>
+    </main>
+
+
+    
+</body>
+</html>
